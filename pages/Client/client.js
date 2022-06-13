@@ -47,9 +47,14 @@ export default function Client() {
     if (getinputlowercase === "") {
       alert("Please enter a project name");
     } else if (getinputlowercase === "todoapp") {
-      alert("Click the link below to go to the Todo App 🔥");
+      alert(`Hurray Your ${getinputlowercase} is ready 🔥`);
 
       localStorage.setItem("projectname", getinputlowercase);
+
+      setTimeout(() => {
+        // window location href target blank
+        window.open("http://localhost:3000/Client/Generate");
+      }, 3000);
     } else {
       return startApplication();
     }
