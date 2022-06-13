@@ -1,34 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Welcome to the [`README.md📑`](README.md)
 
-## Getting Started
+# Oli WebApplication 🤖
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+<br />
+<h1>What is Oli❓</h1>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p>
+Oli is a powerful AI platform that helps you build your
+applications faster. Oli helps you to build your applications faster providing you with secured and informative results that are easy understand through your requests.
+</p>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+<br />
+<br />
+<br />
+<h1>How can I use Oli❓</h1>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+<p>You can use Oli by sending a project request to the Oli.</p>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<br />
+<br />
 
-## Learn More
+<h1>How can I send project request to Oli❓</h1>
 
-To learn more about Next.js, take a look at the following resources:
+<p>You can send a project request to the Oli by following the steps below:</p>
+<br />
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<ol>
+<li>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<strong>Step 1:</strong>
+<a href="https://oli.ai/">Intergrate your Apps</a> using Oli.
 
-## Deploy on Vercel
+</li>
+<li>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<strong>Step 2:</strong>
+<a href="https://oli.ai/">Create a Project</a> using Oli.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+When you click the create button
+You are sending a request to the Oli. The request will be sent to Oli to be processed, once the request is processed, you will receive a response and be directed to the Oli generatepage. The generatepage will show you results of the request.
+
+</li>
+</ol>
+
+
+<br />
+<br />
+<br />
+
+<h1>Is Oli free❓</h1>
+
+
+<p>
+    Oli is an open source project. You can use Oli for free.
+    But premium features will be available soon and you will not be able to use them for free.
+</p>
