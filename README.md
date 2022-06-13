@@ -17,8 +17,6 @@ applications faster. Oli helps you to build your applications faster providing y
 <p>You can use Oli by sending a project request to the Oli.</p>
 
 <br />
-<br />
-
 <h1>How can I send project request to Oli❓</h1>
 
 <p>You can send a project request to the Oli by following the steps below:</p>
@@ -44,9 +42,6 @@ You are sending a request to the Oli. The request will be sent to Oli to be proc
 
 
 <br />
-<br />
-<br />
-
 <h1>Is Oli free❓</h1>
 
 
