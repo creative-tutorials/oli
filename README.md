@@ -12,8 +12,6 @@ applications faster. Oli helps you to build your applications faster providing y
 </p>
 
 <br />
-<br />
-<br />
 <h1>How can I use Oli❓</h1>
 
 <p>You can use Oli by sending a project request to the Oli.</p>
