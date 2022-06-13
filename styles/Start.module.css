@@ -1,36 +1,62 @@
-:root .Home {
+:root .Start {
   --Container-BG: #fdfdff;
   --border-Radius: 0.5rem;
   --box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
   --span-color: #5f6bf1;
   --grey: #636363;
+  --icon-color: #5f6bf1;
 }
-.Home {
+.Start {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
 }
 .container {
-  background: var(--Container-BG);
-  padding: 30px 30px;
   width: 100%;
   max-width: 500px;
+  background: var(--Container-BG);
+  padding: 30px 30px;
   box-shadow: var(--box-shadow);
   border-radius: var(--border-Radius);
 }
-.container .content .card .cardContent h1 span {
+.container .content .header .header_content h1 {
+  font-size: 2.5rem;
   font-weight: 600;
-  color: var(--span-color);
-  text-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.1);
 }
-.container .content .card .cardContent p {
-  font-size: 1.2rem;
-  line-height: 1.5;
+.container .content .header .header_content h1 span {
+  color: var(--span-color);
+  text-shadow: 0 0.15rem 0.15rem rgba(0, 0, 0, 0.1);
+}
+.container .content .header .header_content p {
   color: var(--grey);
   font-weight: 500;
 }
-.container .content .card .cardContent a button {
+.container .content .integrationDIv .integration {
+  padding: 10px;
+}
+.container .content .integrationDIv .integration .App_Integrate {
+  margin: 20px auto;
+}
+.container .content .integrationDIv .integration .App_Integrate .flexEnd {
+  display: flex;
+  margin-bottom: 5px;
+}
+.container .content .integrationDIv .integration .App_Integrate .ctext {
+  font-size: 1.2rem;
+}
+.container .content .integrationDIv .integration .App_Integrate i {
+  font-size: 1.5rem;
+  margin-right: 3px;
+  color: var(--icon-color);
+}
+.container
+  .content
+  .integrationDIv
+  .integration
+  .App_Integrate
+  .integtate_button
+  button {
   background: var(--span-color);
   color: #fff;
   border: none;
@@ -40,25 +66,6 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-}
-.footer .footer_content .footer_links {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-.footer .footer_content .footer_links a {
-  margin: auto;
-  color: var(--grey);
-  font-size: 1.2rem;
-  font-weight: 500;
-  text-decoration: none;
-}
-.footer .footer_content .footer_links a p span {
-  transition: all 0.2s ease-in-out;
-}
-.footer .footer_content .footer_links a p span:hover {
-  color: var(--span-color);
 }
 .themeBtn {
   position: fixed;

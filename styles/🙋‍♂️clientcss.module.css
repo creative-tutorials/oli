@@ -1,0 +1,120 @@
+:root .container {
+  --white: #fff;
+  --black: #000;
+  --span-color: #5f6bf1;
+}
+.container .wrapper {
+  padding: 20px 20px;
+}
+.container .wrapper .content .header {
+  width: 100%;
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  padding: 8px 30px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+.container .wrapper .content .header .header_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container .wrapper .content .header .header_content .links_of_link a {
+  margin: 0 20px 0;
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 500;
+}
+.container .wrapper .content .body {
+  margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  /* max-width: 960px; */
+  background: var(--white);
+  padding: 20px;
+  z-index: -1;
+  border-radius: 10px;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+.container .wrapper .content .body .body_content .bodywrapcontent .textInput {
+  position: relative;
+  z-index: 999;
+  display: flex;
+}
+.container
+  .wrapper
+  .content
+  .body
+  .body_content
+  .bodywrapcontent
+  .textInput
+  input {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid transparent;
+  outline: none;
+  box-sizing: border-box;
+  background: #f9f9f9;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+.container
+  .wrapper
+  .content
+  .body
+  .body_content
+  .bodywrapcontent
+  .textInput
+  button {
+  background: var(--black);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0 5px 5px 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.container .wrapper .content .body .body_content .bodywrapcontent .commands {
+  padding: 10px;
+  background: #f0f0f0;
+  border-bottom: 1px solid #c8c8c8;
+  margin-top: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  width: 270px;
+  user-select: none;
+  cursor: pointer;
+}
+.container .wrapper .content .body .body_content .bodywrapcontent .commands i {
+  margin-right: 8px;
+}
+.commandTabs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.themeBtn {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  /* z-index: 999; */
+}
+.themeBtn .themeBtn_button {
+  background: var(--span-color);
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}

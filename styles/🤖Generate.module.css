@@ -1,0 +1,107 @@
+:root .generateApp {
+  --Container-BG: #fdfdff;
+  --border-Radius: 0.5rem;
+  --box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  --span-color: #5f6bf1;
+  --grey: #636363;
+  --icon-color: #be4f4f;
+}
+.generateApp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  transition: all 0.3s ease-in-out;
+}
+.identify {
+  width: 100%;
+  padding: 30px 30px;
+  max-width: 1200px;
+  background: var(--Container-BG);
+  border-radius: var(--border-Radius);
+  box-shadow: var(--box-shadow);
+  transition: all 0.3s ease-in-out;
+}
+.identify .identify_content h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--span-color);
+}
+.identify .identify_content .para {
+  color: var(--grey);
+  font-weight: 500;
+}
+.identify .identify_content .lists .list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.identify .identify_content .lists .list .list_items {
+  width: 200px;
+  padding: calc(10px + 1vw) calc(10px + 1vw);
+  background: #edf2ff;
+  border-radius: var(--border-Radius);
+  box-shadow: var(--box-shadow);
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.identify .identify_content .lists .list .list_items h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--span-color);
+}
+.identify .identify_content .lists .list .list_items button {
+  background: var(--span-color);
+  color: #fff;
+  border: none;
+  padding: 15px 0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+}
+.identify .footer {
+  width: 100%;
+}
+.footer .footer_content .footer_flex .footer_flex_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .footer_content .footer_flex .footer_flex_item .footerItemsof1 a {
+  text-decoration: none;
+  color: var(--span-color);
+  margin-right: 10px;
+  font-weight: 500;
+}
+.footer .footer_content .footer_flex .footer_flex_item .footerItemsof1 a:hover {
+  text-decoration: underline;
+}
+.footer .footer_content .footer_flex .footer_flex_item .footerItemsof2 a {
+  text-decoration: none;
+  color: var(--span-color);
+  margin-right: 30px;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+.themeBtn {
+  position: fixed;
+  bottom: 10px;
+  left: 50px;
+  /* z-index: 999; */
+}
+.themeBtn .themeBtn_button {
+  background: var(--span-color);
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
