@@ -37,9 +37,12 @@
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 50px;
+  width: 100%;
+  /* background: red; */
 }
 .identify .identify_content .lists .list .list_items {
-  width: 200px;
+  width: 100%;
+  max-width: 500px;
   padding: calc(10px + 1vw) calc(10px + 1vw);
   background: #edf2ff;
   border-radius: var(--border-Radius);

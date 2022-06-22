@@ -4,31 +4,26 @@ import Link from "next/link";
 import cssbot from "../../styles/🤖Generate.module.css";
 export default function Genrate() {
   const [theme, setTheme] = useState();
+  const list = useRef();
+  const generateApp = useRef();
   useEffect(() => {
-    const linksoflink = document.querySelector(
-      ".__Generate_lists__Njc_m .__Generate_list__VbABD"
-    );
     return () => {
-      checkApproved();
+      runCrossCheck();
     };
   }, []);
-  const checkApproved = () => {
+  const runCrossCheck = () => {
     const fetchLocalStorage = localStorage.getItem("projectname");
     if (fetchLocalStorage) {
       checkApproved();
     } else {
       console.log("not approved");
-      const generateApp = document.querySelector(
-        ".__Generate_generateApp__gAjjU"
-      );
-      generateApp.style.display = "none";
+      const generateAppContent = generateApp.current.style;
+      generateAppContent.display = "none";
     }
     function checkApproved() {
       console.log("approved");
-      const generateApp = document.querySelector(
-        ".__Generate_generateApp__gAjjU"
-      );
-      generateApp.style.display = "flex";
+      const generateAppContent = generateApp.current.style;
+      generateAppContent.display = "flex";
     }
 
     //
@@ -40,69 +35,147 @@ export default function Genrate() {
       // get api request
 
       async function getTodoAppLoaded() {
+        const listx = list.current;
         const response = await fetch("http://localhost:3000/api/route");
         const data = await response.json();
-        console.log(data);
+        // console.log(data);
         localStorage.setItem("todoapp", JSON.stringify(data));
+        for (let i = 0; i < 6; i++) {
+          const createApp = document.createElement("div");
+          listx.appendChild(createApp);
+          const indexdata = data.TodoApp.random;
 
-        const linksoflink = document.querySelector(".__Generate_list__VbABD");
-        const createApp = document.createElement("div");
-        linksoflink.appendChild(createApp);
-        // createApp.className = cssbot.list_items;
-        createApp.innerHTML = `<div class=${cssbot.list_items}>
-        <h2>Todo App</h2>
-        <p>
-          This is the Todo App. You can add tasks to the list and you
-          can delete tasks from the list.
-        </p>
-          <a class=${cssbot.link} href=${
-          data.TodoApp.GitHubRepoLink
-        } target=${"_blank"}>
-            <button class=${cssbot.button}>
-              <span class=${cssbot.button_text}>View Todo App</span>
-            </button>
-          </a>
-      </div>`;
+          // generate random indexdata
+          const randomIndex =
+            indexdata[Math.floor(Math.random() * indexdata.length)];
+          console.log(randomIndex);
+          createApp.innerHTML = `<div class=${cssbot.list_items}>
+          <h2>Todo App</h2>
+          <p>
+            This is the Todo App. You can add tasks to the list and you
+            can delete tasks from the list.
+          </p>
+            <a class=${cssbot.link} href=${randomIndex} target=${"_blank"}>
+              <button class=${cssbot.button}>
+                <span class=${cssbot.button_text}>View Todo App</span>
+              </button>
+            </a>
+        </div>`;
+        }
       }
     }
+    //
+    //
     if (fetchLocalStorage === "weatherapp") {
       //? if weatherapp is in local storage
-      getWeatherAppLoaded(); //* fetching the weather app from GitHub Repo.
+      getTodoAppLoaded(); //* fetching the todo app from GitHub Repo.
 
       // get api request
 
-      async function getWeatherAppLoaded() {
+      async function getTodoAppLoaded() {
+        const listx = list.current;
         const response = await fetch("http://localhost:3000/api/route");
         const data = await response.json();
-        console.log(data);
+        // console.log(data);
         localStorage.setItem("todoapp", JSON.stringify(data));
-        const linksoflink = document.querySelector(".__Generate_list__VbABD");
-        const createApp = document.createElement("div");
-        // createApp.className = cssbot.list_items;
-        createApp.innerHTML = `<div class=${cssbot.list_items}>
-        <h2>Todo App</h2>
-        <p>
-          This is the Todo App. You can add tasks to the list and you
-          can delete tasks from the list.
-        </p>
-          <a class=${cssbot.link}>
-            <button class=${cssbot.button}>
-              <span class=${cssbot.button_text}>View Todo App</span>
-            </button>
+        for (let i = 0; i < 6; i++) {
+          const createApp = document.createElement("div");
+          listx.appendChild(createApp);
+          const indexdata = data.WeatherApp.random;
+
+          // generate random indexdata
+          const randomIndex =
+            indexdata[Math.floor(Math.random() * indexdata.length)];
+          console.log(randomIndex);
+          createApp.innerHTML = `<div class=${cssbot.list_items}>
+          <h2>WeatherApp</h2>
+          <p>
+            This is the Weather App. In this app you can check the weather
+            of any city.
+          </p>
+            <a class=${cssbot.link} href=${randomIndex} target=${"_blank"}>
+              <button class=${cssbot.button}>
+                <span class=${cssbot.button_text}>View Todo App</span>
+              </button>
             </a>
-            </div>`;
-        linksoflink.appendChild(createApp);
+        </div>`;
+        }
       }
     }
     if (fetchLocalStorage === "calculatorapp") {
-      getCalculatorAppLoaded(); //* fetching the calculator app from GitHub Repo.
+      getCalculatorAppLoded(); //* fetching the todo app from GitHub Repo.
+
+      // get api request
+
+      async function getCalculatorAppLoded() {
+        const listx = list.current;
+        const response = await fetch("http://localhost:3000/api/route");
+        const data = await response.json();
+        // console.log(data);
+        localStorage.setItem("todoapp", JSON.stringify(data));
+        for (let i = 0; i < 6; i++) {
+          const createApp = document.createElement("div");
+          listx.appendChild(createApp);
+          const indexdata = data.CalculatorApp.random;
+
+          // generate random indexdata
+          const randomIndex =
+            indexdata[Math.floor(Math.random() * indexdata.length)];
+          console.log(randomIndex);
+          createApp.innerHTML = `<div class=${cssbot.list_items}>
+          <h2>CalculatorApp</h2>
+          <p>
+            This is the Calculator App. In this app you can do basic
+            calculations.
+          </p>
+            <a class=${cssbot.link} href=${randomIndex} target=${"_blank"}>
+              <button class=${cssbot.button}>
+                <span class=${cssbot.button_text}>View Todo App</span>
+              </button>
+            </a>
+        </div>`;
+        }
+      }
     }
     if (fetchLocalStorage === "calendarapp") {
       getCalendarAppLoaded(); //* fetching the calendar app from GitHub Repo.
+
+      // get api request
+
+      async function getCalendarAppLoaded() {
+        const listx = list.current;
+        const response = await fetch("http://localhost:3000/api/route");
+        const data = await response.json();
+        // console.log(data);
+        localStorage.setItem("todoapp", JSON.stringify(data));
+        for (let i = 0; i < 6; i++) {
+          const createApp = document.createElement("div");
+          listx.appendChild(createApp);
+          const indexdata = data.CalendarApp.random;
+
+          // generate random indexdata
+          const randomIndex =
+            indexdata[Math.floor(Math.random() * indexdata.length)];
+          console.log(randomIndex);
+          createApp.innerHTML = `<div class=${cssbot.list_items}>
+          <h2>CalendarApp</h2>
+          <p>
+            This is GitHub Repo of the Calendar App. All Calendar Application is
+            listed here in different languages.
+          </p>
+            <a class=${cssbot.link} href=${randomIndex} target=${"_blank"}>
+              <button class=${cssbot.button}>
+                <span class=${cssbot.button_text}>View Todo App</span>
+              </button>
+            </a>
+        </div>`;
+        }
+      }
     }
   };
+
   return (
-    <div className={cssbot.generateApp}>
+    <div className={cssbot.generateApp} ref={generateApp}>
       <div className={cssbot.identify}>
         <div className={cssbot.identify_content}>
           <h1>Welcome to Generate Page ✨</h1>
@@ -111,7 +184,7 @@ export default function Genrate() {
             have created.
           </p>
           <div className={cssbot.lists}>
-            <div className={cssbot.list}>
+            <div className={cssbot.list} ref={list}>
               {/* <div className={cssbot.list_items}>
                 <h2>Todo App</h2>
                 <p>

@@ -20,7 +20,7 @@ export default function Home() {
                 applications faster.
               </p>
               {/* --🔲 Button Here-- */}
-              <Link href="/Content/Start">
+              <Link href="/Content/Integrate">
                 <a>
                   <button> Get Started </button>
                 </a>

@@ -46,15 +46,6 @@ export default function Client() {
 
     if (getinputlowercase === "") {
       alert("Please enter a project name");
-    } else if (getinputlowercase === "todoapp") {
-      alert(`Hurray Your ${getinputlowercase} is ready 🔥`);
-
-      localStorage.setItem("projectname", getinputlowercase);
-
-      setTimeout(() => {
-        // window location href target blank
-        window.open("http://localhost:3000/Client/Generate");
-      }, 3000);
     } else {
       return startApplication();
     }
@@ -87,6 +78,15 @@ export default function Client() {
 
       // console log the project name
       console.log(getinputlowercase);
+
+      alert(`Hurray Your ${getinputlowercase} is ready 🔥`);
+
+      localStorage.setItem("projectname", getinputlowercase);
+
+      setTimeout(() => {
+        // window location href target blank
+        window.open("http://localhost:3000/Client/Generate");
+      }, 3000);
     }
   };
   return (
