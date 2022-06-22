@@ -49,3 +49,25 @@ You are sending a request to the Oli. The request will be sent to Oli to be proc
     Oli is an open source project. You can use Oli for free.
     But premium features will be available soon and you will not be able to use them for free.
 </p>
+
+
+## Contribution
+
+
+If you want to contribute to Oli, you can do so by following the steps below:
+
+
+- Step1: Fork The [GitHub Repository]()
+
+- Step2: Create a new branch in the repository name should be "contribution"
+
+- Step3: Add your code to the contribution branch
+
+- Step4: Push your code to the repository
+
+- Step5: Open a pull request
+
+- Step6: Wait for the pull request to be merged
+
+
+# Thats it! You are now a part of the Oli community. 🎉
