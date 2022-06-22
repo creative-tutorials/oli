@@ -28,13 +28,13 @@ You can send a project request to the Oli by following the steps below:
 <li>
 
 <strong>Step 1:</strong>
-<a href="/">Intergrate your Apps</a> using Oli.
+Intergrate your Apps</a> using Oli.
 
 </li>
 <li>
 
 <strong>Step 2:</strong>
-<a href="/">Create a Project</a> using Oli.
+Create a Project using Oli.
 
 When you click the create button
 You are sending a request to the Oli. The request will be sent to Oli to be processed, once the request is processed, you will receive a response and be directed to the Oli generatepage. The generatepage will show you results of the request.
@@ -53,7 +53,7 @@ But premium features will be available soon and you will not be able to use them
 
 If you want to contribute to Oli, you can do so by following the steps below:
 
-- Step1: Fork The [GitHub Repository]()
+- Step1: Fork The [GitHub Repository](https://github.com/creative-tutorials/oli)
 
 - Step2: Create a new branch in the repository name should be "contribution"
 
